@@ -1,8 +1,7 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/list', function() {
-    dd('test');
-});
+Route::get('/list', [BookController::class,'index']);
